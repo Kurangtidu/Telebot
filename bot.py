@@ -15,9 +15,9 @@ logging.basicConfig(level=logging.INFO)
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Selamat datang di Forex Bot!\n\n"
-        "/prediksi EURUSD\n"
-        "/analisa EURUSD\n"
-        "/chart EURUSD"
+        "/prediksi EURUSD - Prediksi harga\n"
+        "/analisa EURUSD - Analisa teknikal\n"
+        "/chart EURUSD - Grafik harga dan indikator"
     )
 
 async def prediksi(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -44,4 +44,4 @@ def main():
     app.run_polling()
 
 if __name__ == "__main__":
-    main(
+    main()
